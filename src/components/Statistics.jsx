@@ -1,11 +1,11 @@
 import React from 'react';
-// import './Index.module.css';
+import css from './Index.module.css';
 
 import PropTypes from 'prop-types';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
-  <div className="statistics">
+  <div className={css["statistics"]}>
   <h5>Good: {good}</h5>
   <h5>Neutral: {neutral}</h5>
   <h5>Bad: {bad}</h5>
